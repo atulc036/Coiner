@@ -3,16 +3,33 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/icons": "^2.1.0",
+    "@chakra-ui/react": "^2.8.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.5",
+    "@mui/icons-material": "^5.14.1",
+    "@mui/material": "^5.14.2",
+    "@mui/styled-engine-sc": "^5.12.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
+    "framer-motion": "^10.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.0",
+    "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "recharts": "^2.7.3",
+    "sass": "^1.65.1",
+    "styled-components": "^6.0.5",
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.3.9"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --host 192.168.51.135",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -22,6 +39,10 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "browserslist": {
     "production": [
