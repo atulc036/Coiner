@@ -21,7 +21,7 @@ export default function Show() {
     store.fetchData(params.id);
 
     return () => {
-      store.reset();
+      store.graphData=null;
     };
   }, []);
 
