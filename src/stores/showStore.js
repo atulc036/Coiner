@@ -22,7 +22,7 @@ const showStore = create((set) => ({
       };
     });
 
-    
+    console.log(graphData)
     set({graphData:graphData})
     
     const coinData = {

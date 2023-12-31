@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import axios from "axios";
-import debounce from "../components/helpers/debounce";
+import debounce from "../../../../Desktop/coiner/src/components/helpers/debounce";
 
 const homeStore = create((set) => ({
   coins: [],

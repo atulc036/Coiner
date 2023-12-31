@@ -21,7 +21,7 @@ export default function Show() {
     store.fetchData(params.id);
 
     return () => {
-      store.graphData=null;
+      store.graphData = null;
     };
   }, []);
 
@@ -49,15 +49,22 @@ export default function Show() {
                     bottom: 0,
                   }}
                 >
-                  <CartesianGrid strokeDasharray="3 3" />
+                  <defs>
+                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#33adff" stopOpacity={0.8} />
+                      <stop offset="95%" stopColor="#33adff" stopOpacity={0} />
+                    </linearGradient>
+                  </defs>
                   <XAxis dataKey="Date" />
                   <YAxis />
                   <Tooltip />
                   <Area
                     type="monotone"
                     dataKey="Price"
-                    stroke="#8884d8"
-                    fill="#8884d8"
+                    stroke="#33adff"
+                    strokeWidth={3}
+                    fill="url(#colorUv)"
+                    fillOpacity={0.5}
                   />
                 </AreaChart>
               </ResponsiveContainer>
